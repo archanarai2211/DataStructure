@@ -28,3 +28,24 @@ Post Order
 Left and right children are visited before the node
 Usage delete children first and then the node
 
+Search
+=========
+
+Traversal complexity
+---------------------
+
+Avg Case O(log n)
+WorstCase O(n)
+
+Deletion
+=========
+
+Traversal complexity
+---------------------
+
+Avg Case O(log n)
+WorstCase O(n)
+
+Node without leaf: Simply remove
+Node with one leaf: Remove node and put the child node on its place
+Node with two leaves: Remove Node and replace it with its leftmost child of the right node child. If it has further right child leaf then locate it to its parent's place
