@@ -7,14 +7,14 @@ public class Traversal {
     }
 
     public void inOrderTraversal( BSTNode root){
-        preOrderTraversal(root.left);
+        inOrderTraversal(root.left);
         action(root);
-        preOrderTraversal(root.right);
+        inOrderTraversal(root.right);
     }
 
     public void postOrderTraversal( BSTNode root){
-        preOrderTraversal(root.left);
-        preOrderTraversal(root.right);
+        postOrderTraversal(root.left);
+        postOrderTraversal(root.right);
         action(root);
     }
 
