@@ -8,6 +8,9 @@ public class QuickSort {
         }
     }
 
+    //Worst time performance O(n^2)
+    //Avg and best O(nlogn)
+    //Space performance O(n)
     private static void quickSort(int[] arr, int s, int l) {
         if(s<l) {
             int pi = partition(arr, s, l);
