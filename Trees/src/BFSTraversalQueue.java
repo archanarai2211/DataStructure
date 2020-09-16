@@ -1,6 +1,8 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
+//Time Complexity: O(n) where n is number of nodes in the binary tree
+//Space Complexity: O(n) where n is number of nodes in the binary tree
 public class BFSTraversalQueue {
 
     // Root of the Binary Tree

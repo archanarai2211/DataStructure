@@ -1,3 +1,4 @@
+//Time Complexity: O(n^2) in worst case.
 public class BFSTraversalFunction {
 
     // Root of the Binary Tree
