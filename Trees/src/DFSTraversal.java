@@ -1,4 +1,4 @@
-public class Traversal {
+public class DFSTraversal {
 
     public void preOrderTraversal( BSTNode root){
         action(root);

@@ -66,6 +66,7 @@ public class HashTable<X,Y> {
         return false;
     }
 
+    //hash fn should be  stable, uniform n secured
     private int calculateHash(X key){
         //get hash slot
         int hash = key.hashCode() % capacity;

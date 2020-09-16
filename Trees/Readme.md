@@ -8,7 +8,7 @@ This is for balanced tree
 Worst Case O(n)
 Worst case happens of on unbalanced tree where a tree starts behaving like a linked list
 
-Tree Traversal
+Tree DFSTraversal
 ===============
 
 Complexity O(n)
@@ -31,7 +31,7 @@ Usage delete children first and then the node
 Search
 =========
 
-Traversal complexity
+DFSTraversal complexity
 ---------------------
 
 Avg Case O(log n)
@@ -40,7 +40,7 @@ WorstCase O(n)
 Deletion
 =========
 
-Traversal complexity
+DFSTraversal complexity
 ---------------------
 
 Avg Case O(log n)

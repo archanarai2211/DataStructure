@@ -2,8 +2,12 @@ public class Test {
 
     public static void main(String[] args) {
 
-        int[] arr = {2, 3, 1 ,6, 9, 8, 4, 5, 0};
-        partition(arr, 0, arr.length-1);
+        OneEditApart("cat", "dog") ;//= false
+        OneEditApart("cat", "cats");// = true
+        OneEditApart("cat", "cut") ;//= true
+        OneEditApart("cat", "cast");// = true
+        OneEditApart("cat", "at") ;//= true
+        OneEditApart("cat", "act") ;//= false
     }
 
 }
