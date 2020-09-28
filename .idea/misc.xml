@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/sorting/pom.xml" />
         <option value="$PROJECT_DIR$/DS/pom.xml" />
+        <option value="$PROJECT_DIR$/Problems/pom.xml" />
+        <option value="$PROJECT_DIR$/SlidingWindow/pom.xml" />
       </list>
     </option>
   </component>

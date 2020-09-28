@@ -42,4 +42,5 @@ public class BFSTraversalQueue {
         System.out.println("Level order traversal of binary tree is - ");
         tree_level.printLevelOrder();
     }
+
 }
