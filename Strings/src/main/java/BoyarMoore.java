@@ -11,13 +11,28 @@ public class BoyarMoore {
     private static int bm(String text, String pattern) {
         //bad table
         HashMap<Character, Integer> bt = generateBadTable(pattern);
-        for(int i = 0; i< text.length();){
-            if(bt.get(text.charAt(i))!=null){
-                i = i+bt.get(text.charAt(i);
+        //text length
+        int tl = text.length();
+        //pattern length
+        int pl = pattern.length();
+        int noOfSkips;
+        for(int i = 0; i< tl-pl;i=i+noOfSkips){
+            noOfSkips = 0;
+            //start comparing from end of pattern
+            for(int j = pl-1; j>=0; j--){
+                if(pattern.charAt(j) != text.charAt(i+j)) {
+                    if (bt.get(pattern.charAt(j)) != null) {
+                        noOfSkips = bt.get(pattern.charAt(j));
+                    }else{
+                        noOfSkips=pl;
+                    }
+                    break;
+                }
             }
-            i = i+pattern.length();
+            if(noOfSkips==0)
+                return i;
         }
-
+        return tl;
 
     }
 
@@ -27,5 +42,6 @@ public class BoyarMoore {
             int max = Math.max(1, pattern.length()-i-1);
             bt.put(pattern.charAt(i), max);
         }
+        return bt;
     }
 }

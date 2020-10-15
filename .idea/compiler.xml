@@ -18,9 +18,9 @@
       <module name="DS" target="7" />
       <module name="DynamicProgramming" target="7" />
       <module name="Problems" target="7" />
-      <module name="Recursion" target="1.5" />
+      <module name="Recursion" target="8" />
       <module name="SlidingWindow" target="8" />
-      <module name="Strings" target="1.5" />
+      <module name="Strings" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

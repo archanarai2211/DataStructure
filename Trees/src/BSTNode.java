@@ -1,9 +1,9 @@
 public class BSTNode<T> {
 
-    public T data;
+    public Integer data;
     public BSTNode left;
     public  BSTNode right;
-    public BSTNode(T value){
+    public BSTNode(Integer value){
         this.data = value;
     }
 
