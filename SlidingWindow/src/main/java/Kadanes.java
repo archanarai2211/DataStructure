@@ -6,12 +6,17 @@ public class Kadanes {
     }
 
     private static int maxSubArray(int[] a) {
-        int localMax = 0;
-        int max = Integer.MIN_VALUE;
-        for(int i=0; i<a.length;i++){
-            localMax = Math.max(localMax + a[i], a[i]);
-            max = Math.max(max, localMax);
-        }
-        return max;
+       int size = a.length; 
+        int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
+  
+        for (int i = 0; i < size; i++) 
+        { 
+            max_ending_here = max_ending_here + a[i]; 
+            if (max_so_far < max_ending_here) 
+                max_so_far = max_ending_here; 
+            if (max_ending_here < 0) 
+                max_ending_here = 0; 
+        } 
+        return max_so_far; 
     }
 }
